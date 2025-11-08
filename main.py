@@ -12,8 +12,13 @@ SCREEN_WIDTH, SCREEN_HEIGHT = 800, 600
 WEBCAM_WIDTH, WEBCAM_HEIGHT = 640, 480
 JUDGEMENT_LINE_Y = 500
 NOTE_COLOR_MAP = {
-    "FIST": (255, 0, 0), "OPEN": (0, 255, 0), "V": (0, 0, 255), "DEFAULT": (200, 200, 200)
+    "L-GRAB": (255, 0, 0), 
+    "L-PICK": (0, 255, 0), 
+    "R-GRAB": (0, 0, 255), 
+    "R-PICK": (200, 200, 200),
+    "DEFAULT": (100, 100, 100) 
 }
+NOTE_SPEED = 25
 JUDGEMENT_THRESHOLDS = {'PERFECT': 40, 'GREAT': 80}
 
 class Game:
@@ -34,7 +39,7 @@ class Game:
         self.hand_tracker = HandTracker()
         self.pose_comparator = PoseComparator('poses.json')
         self.note_controller = NoteController('level1.json', speed=350)
-        self.judgement_engine = JudgementEngine(JUDGEMENT_LINE_Y, JUDGEMENT_THRESHOLDS)
+        self.judgement_engine = JudgementEngine(JUDGEMENT_LINE_Y, JUDGEMENT_THRESHOLDS, NOTE_SPEED)
 
         # 게임 상태 변수
         self.score = 0
@@ -63,7 +68,7 @@ class Game:
 
             # 3. 판정 로직
             judgements = self.judgement_engine.check_judgements(
-                self.note_controller.notes, self.current_pose
+                self.note_controller.notes, self.current_pose, delta_time=delta_time
             )
             for j in judgements:
                 self.process_judgement(j['judgement'])
@@ -170,17 +175,17 @@ if __name__ == '__main__':
         "song": "test_song",
         "bpm": 120,
         "notes": [
-            {"time": 2.0, "pose": "FIST"},
-            {"time": 3.0, "pose": "OPEN"},
-            {"time": 4.0, "pose": "V"},
-            {"time": 5.0, "pose": "FIST"},
-            {"time": 5.5, "pose": "OPEN"},
-            {"time": 6.0, "pose": "V"},
-            {"time": 7.0, "pose": "OPEN"},
-            {"time": 7.25, "pose": "FIST"},
-            {"time": 7.5, "pose": "OPEN"},
-            {"time": 7.75, "pose": "FIST"},
-            {"time": 9.0, "pose": "V"}
+            {"time": 2.0, "pose": "L-GRAB"},
+            {"time": 3.0, "pose": "L-PICK"},
+            {"time": 4.0, "pose": "L-GRAB"},
+            {"time": 5.0, "pose": "L-PICK"},
+            {"time": 5.5, "pose": "L-GRAB"},
+            {"time": 6.0, "pose": "L-PICK"},
+            {"time": 7.0, "pose": "L-GRAB"},
+            {"time": 7.25, "pose": "L-PICK"},
+            {"time": 7.5, "pose": "L-GRAB"},
+            {"time": 7.75, "pose": "L-PICK"},
+            {"time": 9.0, "pose": "L-GRAB"}
         ]
     }
     with open('level1.json', 'w') as f:
