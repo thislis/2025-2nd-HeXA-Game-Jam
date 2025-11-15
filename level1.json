@@ -1,1 +1,60 @@
-{"song": "test_song", "bpm": 120, "notes": [{"time": 2.0, "pose": "L-GRAB"}, {"time": 3.0, "pose": "L-PICK"}, {"time": 4.0, "pose": "L-GRAB"}, {"time": 5.0, "pose": "L-PICK"}, {"time": 5.5, "pose": "L-GRAB"}, {"time": 6.0, "pose": "L-PICK"}, {"time": 7.0, "pose": "L-GRAB"}, {"time": 7.25, "pose": "L-PICK"}, {"time": 7.5, "pose": "L-GRAB"}, {"time": 7.75, "pose": "L-PICK"}, {"time": 9.0, "pose": "L-GRAB"}]}
+{
+    "song": "dynamic_test_song_v4",
+    "bpm": 120,
+    "notes": [
+        {
+            "time": 2.0,
+            "pose": "PICK",
+            "type": "hold",
+            "duration": 2.3421570198202355
+        },
+        {
+            "time": 4.996859324549952,
+            "pose": "GRAB",
+            "type": "tap"
+        },
+        {
+            "time": 5.956121407323181,
+            "pose": "PICK",
+            "type": "tap"
+        },
+        {
+            "time": 6.843184373170412,
+            "pose": "PICK",
+            "type": "hold",
+            "duration": 1.5916752178230136
+        },
+        {
+            "time": 9.294069027747199,
+            "pose": "DEFAULT",
+            "type": "tap"
+        },
+        {
+            "time": 10.532570245366262,
+            "pose": "PICK",
+            "type": "tap"
+        },
+        {
+            "time": 11.75876075922324,
+            "pose": "DEFAULT",
+            "type": "hold",
+            "duration": 2.228550072472456
+        },
+        {
+            "time": 14.916544055663355,
+            "pose": "DEFAULT",
+            "type": "tap"
+        },
+        {
+            "time": 15.83773160688041,
+            "pose": "DEFAULT",
+            "type": "hold",
+            "duration": 2.203569088653255
+        },
+        {
+            "time": 18.63324444221047,
+            "pose": "PICK",
+            "type": "tap"
+        }
+    ]
+}
