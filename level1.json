@@ -1,78 +1,78 @@
 {
-    "song": "dynamic_test_song_v10",
+    "song": "dynamic_test_beatmap",
     "bpm": 120,
     "notes": [
         {
             "time": 2.0,
-            "pose": "DEFAULT",
+            "pose": "GRAB",
+            "type": "tap"
+        },
+        {
+            "time": 3.1516765873603596,
+            "pose": "PICK",
             "type": "swipe",
-            "duration": 1.9883734395791515,
+            "duration": 1.6522985578313338,
             "direction": "LEFT"
         },
         {
-            "time": 4.648738318462604,
+            "time": 5.612277164491948,
+            "pose": "GRAB",
+            "type": "hold",
+            "duration": 1.8340732874354728
+        },
+        {
+            "time": 8.019938683312393,
             "pose": "PICK",
             "type": "tap"
         },
         {
-            "time": 5.596996786450783,
+            "time": 8.926610589492727,
             "pose": "PICK",
             "type": "swipe",
-            "duration": 1.4280563582100503,
+            "duration": 1.7590339230655996,
             "direction": "RIGHT"
         },
         {
-            "time": 7.999178829816168,
-            "pose": "PICK",
+            "time": 11.669909864105954,
+            "pose": "GRAB",
             "type": "swipe",
-            "duration": 1.7710703267218166,
+            "duration": 1.6086320564927739,
             "direction": "RIGHT"
         },
         {
-            "time": 10.399492603928074,
-            "pose": "DEFAULT",
+            "time": 14.0783788054798,
+            "pose": "GRAB",
+            "type": "swipe",
+            "duration": 1.7910983307773347,
+            "direction": "RIGHT"
+        },
+        {
+            "time": 16.76038811426063,
+            "pose": "PICK",
             "type": "tap"
         },
         {
-            "time": 11.375076935535029,
+            "time": 17.727077965929038,
+            "pose": "GRAB",
+            "type": "hold",
+            "duration": 1.1134426765650765
+        },
+        {
+            "time": 19.35623273835281,
             "pose": "GRAB",
             "type": "tap"
         },
         {
-            "time": 12.477901670399351,
-            "pose": "GRAB",
-            "type": "tap"
-        },
-        {
-            "time": 13.304346740916767,
-            "pose": "PICK",
-            "type": "swipe",
-            "duration": 1.940610968575868,
-            "direction": "RIGHT"
-        },
-        {
-            "time": 15.863499791679038,
-            "pose": "DEFAULT",
-            "type": "tap"
-        },
-        {
-            "time": 16.746911952000183,
-            "pose": "PICK",
-            "type": "tap"
-        },
-        {
-            "time": 17.709691958685394,
+            "time": 20.161890966116736,
             "pose": "GRAB",
             "type": "swipe",
-            "duration": 1.8659610833587204,
+            "duration": 1.9066092264462835,
             "direction": "LEFT"
         },
         {
-            "time": 20.108620613757243,
+            "time": 22.576892025868688,
             "pose": "GRAB",
-            "type": "swipe",
-            "duration": 1.4639084405743046,
-            "direction": "RIGHT"
+            "type": "tap"
         }
     ]
 }
